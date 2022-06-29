@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/animelink/static/css/main.863c34cf.css",
-    "main.js": "/animelink/static/js/main.41395054.js",
+    "main.css": "/animelink/static/css/main.95573dfb.css",
+    "main.js": "/animelink/static/js/main.45754be5.js",
     "static/media/kunai.png": "/animelink/static/media/kunai.6682e500ecdb9eeef93b.png",
     "index.html": "/animelink/index.html",
-    "main.863c34cf.css.map": "/animelink/static/css/main.863c34cf.css.map",
-    "main.41395054.js.map": "/animelink/static/js/main.41395054.js.map"
+    "main.95573dfb.css.map": "/animelink/static/css/main.95573dfb.css.map",
+    "main.45754be5.js.map": "/animelink/static/js/main.45754be5.js.map"
   },
   "entrypoints": [
-    "static/css/main.863c34cf.css",
-    "static/js/main.41395054.js"
+    "static/css/main.95573dfb.css",
+    "static/js/main.45754be5.js"
   ]
 }
