@@ -1,0 +1,100 @@
+.container-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 75vh;
+    margin: 3.5rem auto;
+    overflow: hidden;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.logo h1{
+    animation: slide-down 1.5s ease-in;
+}
+
+@keyframes slide-down{
+    from{
+        transform: translateY(-100vh);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.input p {
+    width: 70%;
+    text-align: center;
+    margin: 10px;
+}
+
+.input{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: slide-up 1.5s ease-in;
+}
+
+@keyframes slide-up{
+    from{
+        transform: translateY(100vh);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+.input input{
+    background-color: transparent;
+    border: none;
+    width: max-content;
+    padding: 0.3rem;
+    color: aliceblue;
+    outline: none;
+}
+
+.input input::placeholder{
+    color: aliceblue;
+}
+
+.input div{
+    border-radius: 6px;
+    display: flex;
+    gap: 2px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #EB5757;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414141, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414141, #EB5757);
+    padding: 0.3rem;
+    width: 90%;
+    color: aliceblue;
+    margin: 5px auto;
+}
+
+.button-home{
+    margin: 15px auto;
+    padding: 0.3rem;
+    width: 60%;
+    background: #EB5757;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414141, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414141, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border:2px solid black;
+    border-radius: 25px;
+}
+
+.Link{
+    color: aliceblue;
+}

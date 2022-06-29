@@ -1,0 +1,60 @@
+.container-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 75vh;
+    margin: 3.5rem auto;
+    overflow: hidden;
+}
+
+.title-login h1{
+    animation: slide-down ease-in 2.2s;
+}
+
+@keyframes slide-down{
+    from{
+        transform: translateY(-100vh);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+.text-login p{
+    width: 50%;
+    text-align: center;
+    margin: 2rem auto;
+    line-height: 150%;
+    animation: slide-up ease-in 2.2s;
+}
+
+@keyframes slide-up{
+    from{
+        transform: translateY(100vh);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.login-button{
+    padding: 0.3rem;
+    width: 40%;
+    background: #EB5757;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414141, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414141, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border:2px solid black;
+    border-radius: 25px;
+    color: aliceblue;
+    text-decoration: none;
+    animation: slide-up ease-in 3s;
+}
+
+.link {
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+}
