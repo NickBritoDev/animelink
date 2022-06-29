@@ -11,7 +11,7 @@ function RoutesApp(){
         //rotas do navegador
         <BrowserRouter>
         <Routes>
-            <Route path='/' element={<Log/>} />
+            <Route path='/animelink/' element={<Log/>} />
             <Route path='/Home' element={<Home/>} />
             <Route path='/Links' element={<Links/>} />
         </Routes>
