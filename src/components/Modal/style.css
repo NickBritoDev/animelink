@@ -1,0 +1,68 @@
+.container-modal{
+    background-color: rgba(0, 0, 0, 0.541);
+    width: 98%;
+    height: 95%;
+    position: absolute;
+}
+
+.modal-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    margin: 15px auto;
+}
+
+.wrapper-modal{
+    height: 25vh;
+    border-radius: 15px;
+    background-color: aliceblue;
+    color: black;
+    width: 70%;
+    padding: 0.5rem;
+    margin: 65% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.shuriken-icon{
+    width: 30px;
+    background-color: transparent;
+    border: none;
+    transform: rotate(-25deg);
+    animation: rotate-shuriken 1.5s ease-in-out ;
+
+}
+
+@keyframes rotate-shuriken {
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+.shuriken{
+    background-color: transparent;
+    border: none;
+}
+
+span{
+    color: gray;
+}
+
+.modal-copy{
+    padding: 0.5rem;
+    display: flex;
+    color: aliceblue;
+    justify-content: space-between;
+    font-size: 15px;
+    background: #EB5757;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414141, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414141, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    border-radius: 6px;
+}
