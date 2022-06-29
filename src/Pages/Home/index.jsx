@@ -19,12 +19,12 @@ export default function Home() {
         </div>
         <button
         className="button-home" >
-        <Link className="Link" to='/Links'>
           Salvar Anime
-        </Link>
           </button>
       </div>
-      <FavoriteButton/>
+        <Link className="Link" to='/Links'>
+        <FavoriteButton/> 
+        </Link>
     </div>
   )
 }
