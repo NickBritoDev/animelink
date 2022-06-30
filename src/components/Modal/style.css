@@ -15,6 +15,7 @@
         top: 1%;
     }
 }
+
 .modal-header{
     display: flex;
     flex-direction: row;
@@ -29,12 +30,20 @@
     border-radius: 15px;
     background-color: aliceblue;
     color: black;
-    width: 70%;
+    width: 80%;
     padding: 0.5rem;
     margin: 65% auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.wrapper-modal span{
+    padding: 0.5rem;
+    display: flex;
+    width: 95%;
+    overflow: hidden;
+    color: gray;
 }
 
 .shuriken-icon{
@@ -60,9 +69,6 @@
     border: none;
 }
 
-span{
-    color: gray;
-}
 
 .modal-copy{
     padding: 0.5rem;

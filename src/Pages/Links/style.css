@@ -42,18 +42,18 @@
 }
 
 .link-button{
-    width: 98%;
-    margin: 5px auto;
     display: flex;
     align-items: center;
-    gap: 5px;
-    padding: 0.3rem 1.5rem 0.3rem 0.8rem;
-    border: none;
-    border-radius: 6px;
-    background-color: rgba(165, 161, 161, 0.568);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    width: 98%;
+    gap: 5px;
+    margin: 5px auto;
+    padding: 0.3rem 1.5rem 0.3rem 0.8rem;
+    border-radius: 6px;
+    border: none;
+    background-color: rgba(165, 161, 161, 0.568);
 }
 
 .trash-button{
