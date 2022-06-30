@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/animelink/static/css/main.afb8cccf.css",
+    "main.css": "/animelink/static/css/main.3c6683cd.css",
     "main.js": "/animelink/static/js/main.a0371d6b.js",
     "static/media/shuriken.png": "/animelink/static/media/shuriken.6f18bde13ca869a28adc.png",
     "static/media/kunai.png": "/animelink/static/media/kunai.6682e500ecdb9eeef93b.png",
     "static/media/uchiha.png": "/animelink/static/media/uchiha.8e1afce1a0d4397c1f63.png",
     "index.html": "/animelink/index.html",
-    "main.afb8cccf.css.map": "/animelink/static/css/main.afb8cccf.css.map",
+    "main.3c6683cd.css.map": "/animelink/static/css/main.3c6683cd.css.map",
     "main.a0371d6b.js.map": "/animelink/static/js/main.a0371d6b.js.map"
   },
   "entrypoints": [
-    "static/css/main.afb8cccf.css",
+    "static/css/main.3c6683cd.css",
     "static/js/main.a0371d6b.js"
   ]
 }
