@@ -71,7 +71,7 @@ export default function Links() {
           </Link>
           </div>
         </div>
-      )};
+      )}
 
     {myLinks.map (link => (
         <div key={link.id} className="link-item">
@@ -87,7 +87,7 @@ export default function Links() {
           <TbTrash/>
         </button>
       </div>
-    ))};
+    ))}
     
     {modal && (
       <Modal

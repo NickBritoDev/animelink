@@ -3,9 +3,18 @@
     width: 98%;
     height: 95%;
     position: absolute;
-    top: 1%;
+    top: -35%;
 }
 
+@media screen and (max-width:500px) {
+    .container-modal{
+        background-color: rgba(0, 0, 0, 0.541);
+        width: 98%;
+        height: 95%;
+        position: absolute;
+        top: 1%;
+    }
+}
 .modal-header{
     display: flex;
     flex-direction: row;
