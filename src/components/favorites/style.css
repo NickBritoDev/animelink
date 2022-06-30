@@ -7,4 +7,21 @@
     top: 3%;
     right: 2%;
     border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    animation: lateral ease 1.5s;
+}
+
+.favorite-container img {
+    width: 20px;
+}
+
+@keyframes lateral{
+    from {
+        transform: translateY(-300%);
+    } to {
+        transform: translateY(0);
+    }
 }

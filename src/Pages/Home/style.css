@@ -18,6 +18,7 @@
 }
 
 .logo h1{
+    margin-bottom: 15px;
     animation: slide-down 1.5s ease-in;
 }
 
@@ -54,7 +55,6 @@
     }
 }
 
-
 .input input{
     background-color: transparent;
     border: none;
@@ -85,9 +85,9 @@
 }
 
 .button-home{
-    margin: 15px auto;
+    margin: 25px auto 10px auto;
     padding: 0.3rem;
-    width: 90%;
+    width: 50%;
     background: #EB5757;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #414141, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #414141, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */

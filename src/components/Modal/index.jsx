@@ -1,13 +1,14 @@
-import './style.css'
+import './style.css';
 import { TbCopy } from "react-icons/tb";
-import shuriken from './images/shuriken.png'
+import shuriken from './images/shuriken.png';
 
 export default function Modal({closeModal, content}) {
-  //responsavel pela copia do link atravez ded um click
+  //responsavel pela copia do link atravez de um click
   async function copyUrl(){
     await navigator.clipboard.writeText(content.link)
     alert("Link copiado com sucesso, divirta-se 😅")
-  }
+  };
+
   return (
     <div className="container-modal" >
         <div className="wrapper-modal">
@@ -18,7 +19,10 @@ export default function Modal({closeModal, content}) {
         //fecha o modal
         onClick={closeModal} 
         className="shuriken">
-            <img  className="shuriken-icon" src={shuriken} alt="" />
+            <img  
+            className="shuriken-icon" 
+            src={shuriken} 
+            alt="botão para fechar o modal" />
         </button>
         </div>
 
@@ -33,4 +37,4 @@ export default function Modal({closeModal, content}) {
         </div>
     </div>
   )
-}
+};

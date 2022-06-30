@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif;
 }
 
 body{
@@ -12,12 +12,13 @@ body{
 }
 
 h1{
+    text-decoration: line-through 2px solid black;
     text-transform: uppercase;
     background-image: linear-gradient(to right, #414141, #EB5757);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family: 'Rubik Moonrocks', cursive;
 }
 
 .tskuyomi{

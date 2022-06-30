@@ -1,39 +1,42 @@
+import './style.css';
+import FavoriteButton from "../../components/favorites";
+import Modal from "../../components/Modal";
+import api from '../../services/api';
 import { TbUnlink } from "react-icons/tb";
 import { Link } from "react-router-dom";
-import './style.css'
-import FavoriteButton from "../../components/favorites";
 import { useState } from "react";
-import Modal from "../../components/Modal";
-import api from '../../services/api'
+import {saveLink} from '../../services/storage';
 
 export default function Home() {
   //responsavel por capturar e armazenar o que for digitado no campo input
-  const [input, setInput] = useState('')
+  const [input, setInput] = useState('');
   //responsavel pela renderização do modal 
-  const [modal, setModal] = useState(false)
+  const [modal, setModal] = useState(false);
   //responsavel por buscar e armazenar o retorno da api
-  const [data, setData] = useState({})
+  const [data, setData] = useState({});
 
   //responsavel por encurtar, salvar e apresentar um modal na tela para o usuario ter acesso ao link em todas as suas versões
   async function SaveAndShortener(){
     //ao clicar no botão trocamos a condição que antes era false para true sendo assim renderizado na tela o modal ou a msg de erro caso não tenha nada ocupando o input
       const resp = await api.post('/shorten', {
         long_url: input
-      })
+      });
       //limpa o campo de pesquisa automaticamente apos o uso do usuario
-      setInput('')
-      //entrega para a resp a requisição da api dentro do "data"
-      setData(resp.data)
+      setInput('');
+      //entrega para a "resp" a requisição da api dentro do "data"
+      setData(resp.data);
       //abre o modal caso esteja tudo ok
-      setModal(true)
+      setModal(true);
+      //salva o link
+      saveLink('@animelink', resp.data);
     try{
     }catch{
       //abre um alert caso algo de errado
-      alert("Algo deu errado. Por favor, tente novamente ! 😅​")
+      alert("Algo deu errado. Por favor, tente novamente ! 😅​");
       //limpa o campo de pesquisa automaticamente apos o uso do usuario
-      setInput('')
+      setInput('');
     }
-  }
+  };
 
   return (
     <div className="container-home" >
@@ -74,4 +77,4 @@ export default function Home() {
         )}
     </div>
   )
-}
+};

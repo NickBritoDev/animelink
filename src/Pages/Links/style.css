@@ -23,27 +23,37 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    animation: slide-lateral ease-in 1.5s;
+}
+
+@keyframes slide-lateral{
+    from{
+        transform: translateX(350%);
+    }to{
+        transform: translateX(0);
+    }
 }
 
 .link-item{
     display: flex;
     align-items: center;
-    width: 90%;
-    gap: 5px;
+    width: 98%;
     margin: 10px auto;
 }
 
 .link-button{
-    width: 95%;
-    color: aliceblue;
-    padding: 0.3rem 0.6rem 0.5rem 0.6rem;
-    margin: 10px auto;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    width: 98%;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0.3rem 1.5rem 0.3rem 0.8rem;
     border: none;
     border-radius: 6px;
     background-color: rgba(165, 161, 161, 0.568);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .trash-button{
@@ -57,7 +67,60 @@
 
 .link-icon{
     position: relative;
-    top: 4px;
-    right: 5px;
     font-size: 18px;
+}
+
+.back{
+    text-align: center;
+    margin-top: 25px
+}
+
+.lista-vazia{
+    background-color: aliceblue;
+    color: black;
+    padding: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 25px auto;
+    border-radius: 25px;
+    animation: slide-up 2.5s ease;
+}
+
+@keyframes slide-up{
+    from{
+        transform: translateY(350%);
+    }to{
+        transform: translateY(0);
+    }
+}
+
+.lista-vazia h3{
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #414141, #EB5757);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 12px auto;
+    font-weight: bold;
+}
+
+.lista-vazia p{
+    text-transform: uppercase;
+    margin: 12px auto;
+}
+
+.button-lista{
+    background: #EB5757;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414141, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414141, #EB5757);
+    padding: 0.3rem 1.6rem;
+    border-radius: 25px;
+    border: none;
+    display: flex;
+    font-size: 18px;
+    color: aliceblue;
+    gap: 5px;
+    margin: 15px auto;
 }

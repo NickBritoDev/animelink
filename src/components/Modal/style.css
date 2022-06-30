@@ -3,6 +3,7 @@
     width: 98%;
     height: 95%;
     position: absolute;
+    top: 1%;
 }
 
 .modal-header{
@@ -10,7 +11,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 100px;
+    width: 100%;
     margin: 15px auto;
 }
 
